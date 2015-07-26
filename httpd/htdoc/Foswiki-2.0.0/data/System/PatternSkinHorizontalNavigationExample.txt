@@ -1,0 +1,39 @@
+%META:TOPICINFO{author="ProjectContributor" date="1424432594" format="1.1" version="1"}%
+%META:TOPICPARENT{name="PatternSkin"}%
+---+!! <nop>PatternSkin horizontal navigation example
+
+Include main navigation with:
+<verbatim class="tml">
+%INCLUDE{"HorizontalNavigationExample" section="main"}%
+</verbatim>
+
+---++ Include sections
+<verbatim class="tml">
+%STARTSECTION{"main"}%<div id="patternTopBarButtons"><ul class="clear">
+%INCLUDE{
+    "PatternSkinNavigation"
+    section="topbarbutton"
+    ID=""
+    DESTWEB="%USERSWEB%"
+    DESTTOPIC="%HOMETOPIC%"
+    LABEL="%USERSWEB%"
+}%
+%INCLUDE{
+    "PatternSkinNavigation"
+    section="topbarbutton"
+    ID=""
+    DESTWEB="%SYSTEMWEB%"
+    DESTTOPIC="%HOMETOPIC%"
+    LABEL="%SYSTEMWEB%"
+}%
+%INCLUDE{
+    "PatternSkinNavigation"
+    section="topbarbutton"
+    ID=""
+    DESTWEB="%SANDBOXWEB%"
+    DESTTOPIC="%HOMETOPIC%"
+    LABEL="%SANDBOXWEB%"
+}%
+</ul></div>%ENDSECTION{"main"}%
+
+<!-- %JQREQUIRE{"chili"}% -->

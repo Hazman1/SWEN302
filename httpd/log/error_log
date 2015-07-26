@@ -1,0 +1,36 @@
+[Mon Jul 20 14:50:00 2015] [notice] Digest: generating secret for digest authentication ...
+[Mon Jul 20 14:50:00 2015] [notice] Digest: done
+[Mon Jul 20 14:50:01 2015] [notice] Apache/2.2.29 (Unix) DAV/2 PHP/5.4.42 configured -- resuming normal operations
+[Mon Jul 20 14:51:02 2015] [error] [client 127.0.0.1] File does not exist: /u/students/kingharr/httpd/htdoc/favicon.ico
+[Mon Jul 20 14:51:02 2015] [error] [client 127.0.0.1] File does not exist: /u/students/kingharr/httpd/htdoc/favicon.ico
+[Mon Jul 20 14:58:21 2015] [notice] caught SIGTERM, shutting down
+[Mon Jul 27 08:46:26 2015] [notice] Digest: generating secret for digest authentication ...
+[Mon Jul 27 08:46:26 2015] [notice] Digest: done
+[Mon Jul 27 08:46:27 2015] [notice] Apache/2.2.29 (Unix) DAV/2 PHP/5.4.42 configured -- resuming normal operations
+[Mon Jul 27 08:46:44 2015] [error] [client 127.0.0.1] File does not exist: /u/students/kingharr/httpd/htdoc/favicon.ico
+[Mon Jul 27 09:05:59 2015] [notice] caught SIGTERM, shutting down
+[Mon Jul 27 09:07:32 2015] [notice] Digest: generating secret for digest authentication ...
+[Mon Jul 27 09:07:32 2015] [notice] Digest: done
+[Mon Jul 27 09:07:33 2015] [notice] Apache/2.2.29 (Unix) DAV/2 PHP/5.4.42 configured -- resuming normal operations
+[Mon Jul 27 09:21:01 2015] [error] [client 130.195.6.226] File does not exist: /u/students/kingharr/httpd/htdoc/favicon.ico
+[Mon Jul 27 09:21:57 2015] [error] [client 130.195.6.226] File does not exist: /u/students/kingharr/httpd/htdoc/Foswiki-2.0.0/System, referer: http://matterhorn:8585/Foswiki-2.0.0/
+[Mon Jul 27 09:22:07 2015] [error] [client 130.195.6.226] File does not exist: /u/students/kingharr/httpd/htdoc/Foswiki-2.0.0/System, referer: http://matterhorn:8585/Foswiki-2.0.0/
+[Mon Jul 27 09:22:09 2015] [error] [client 130.195.6.226] File does not exist: /u/students/kingharr/httpd/htdoc/Foswiki-2.0.0/bin/view/System/InstallationGuide, referer: http://matterhorn:8585/Foswiki-2.0.0/
+[Mon Jul 27 09:22:12 2015] [error] [client 130.195.6.226] File does not exist: /u/students/kingharr/httpd/htdoc/Foswiki-2.0.0/bin/view/System/InstallationGuide, referer: http://matterhorn:8585/Foswiki-2.0.0/
+[Mon Jul 27 09:22:51 2015] [error] [client 130.195.6.226] File does not exist: /u/students/kingharr/httpd/htdoc/Foswiki-2.0.0/System, referer: http://matterhorn:8585/Foswiki-2.0.0/
+[Mon Jul 27 09:26:23 2015] [error] [client 130.195.6.226] File does not exist: /u/students/kingharr/httpd/htdoc/Main, referer: http://matterhorn:8585/Foswiki-2.0.0/
+[Mon Jul 27 09:26:25 2015] [error] [client 130.195.6.226] File does not exist: /u/students/kingharr/httpd/htdoc/Foswiki-2.0.0/Main, referer: http://matterhorn:8585/Foswiki-2.0.0/
+[Mon Jul 27 09:26:26 2015] [error] [client 130.195.6.226] File does not exist: /u/students/kingharr/httpd/htdoc/Foswiki-2.0.0/bin/view/Main/WebHome, referer: http://matterhorn:8585/Foswiki-2.0.0/
+[Mon Jul 27 09:26:35 2015] [error] [client 130.195.6.226] File does not exist: /u/students/kingharr/httpd/htdoc/Foswiki-2.0.0/bin/view/System/InstallationGuide, referer: http://matterhorn:8585/Foswiki-2.0.0/
+[Mon Jul 27 09:26:37 2015] [error] [client 130.195.6.226] File does not exist: /u/students/kingharr/httpd/htdoc/Foswiki-2.0.0/System, referer: http://matterhorn:8585/Foswiki-2.0.0/
+[Mon Jul 27 09:26:38 2015] [error] [client 130.195.6.226] File does not exist: /u/students/kingharr/httpd/htdoc/Foswiki-2.0.0/System, referer: http://matterhorn:8585/Foswiki-2.0.0/
+[Mon Jul 27 09:26:39 2015] [error] [client 130.195.6.226] File does not exist: /u/students/kingharr/httpd/htdoc/Foswiki-2.0.0/bin/view/System/InstallationGuide, referer: http://matterhorn:8585/Foswiki-2.0.0/
+[Mon Jul 27 09:26:52 2015] [error] [client 130.195.6.226] File does not exist: /u/students/kingharr/httpd/htdoc/Foswiki-2.0.0/System, referer: http://matterhorn:8585/Foswiki-2.0.0/
+[Mon Jul 27 09:26:53 2015] [error] [client 130.195.6.226] File does not exist: /u/students/kingharr/httpd/htdoc/Foswiki-2.0.0/bin/view/System/UpgradeGuide, referer: http://matterhorn:8585/Foswiki-2.0.0/
+[Mon Jul 27 09:26:54 2015] [error] [client 130.195.6.226] File does not exist: /u/students/kingharr/httpd/htdoc/Foswiki-2.0.0/System, referer: http://matterhorn:8585/Foswiki-2.0.0/
+[Mon Jul 27 09:26:55 2015] [error] [client 130.195.6.226] File does not exist: /u/students/kingharr/httpd/htdoc/Foswiki-2.0.0/bin/view/System/UpgradeGuide, referer: http://matterhorn:8585/Foswiki-2.0.0/
+[Mon Jul 27 09:26:59 2015] [error] [client 130.195.6.226] File does not exist: /u/students/kingharr/httpd/htdoc/Foswiki-2.0.0/System, referer: http://matterhorn:8585/Foswiki-2.0.0/
+[Mon Jul 27 09:26:59 2015] [error] [client 130.195.6.226] File does not exist: /u/students/kingharr/httpd/htdoc/Foswiki-2.0.0/bin/view/System/ReleaseNotes02x00, referer: http://matterhorn:8585/Foswiki-2.0.0/
+[Mon Jul 27 09:27:00 2015] [error] [client 130.195.6.226] File does not exist: /u/students/kingharr/httpd/htdoc/Foswiki-2.0.0/System, referer: http://matterhorn:8585/Foswiki-2.0.0/
+[Mon Jul 27 09:27:01 2015] [error] [client 130.195.6.226] File does not exist: /u/students/kingharr/httpd/htdoc/Foswiki-2.0.0/bin/view/System/ReleaseNotes02x00, referer: http://matterhorn:8585/Foswiki-2.0.0/
+[Mon Jul 27 09:34:36 2015] [notice] caught SIGTERM, shutting down

@@ -1,0 +1,76 @@
+%META:TOPICINFO{author="ProjectContributor" date="1426281132" format="1.1" version="1"}%
+%META:TOPICPARENT{name="PatternSkinFatwillyTheme"}%
+---+!! <nop>PatternSkin theme: Foswiki "Fat Willy" Site Skin - Navigation
+
+Include main navigation with:
+<verbatim class="tml">
+%INCLUDE{"PatternSkinThemeFatWillyNavigation" section="main"}%
+</verbatim>
+
+Include meta navigation with:
+<verbatim class="tml">
+%INCLUDE{"PatternSkinThemeFatWillyNavigation" section="meta"}%
+</verbatim>
+
+
+---++ Include sections
+<verbatim class="tml">
+%STARTSECTION{"main"}%<div id="patternTopBarButtons" class="clear"><ul>
+%INCLUDE{
+    "PatternSkinNavigation" section="topbarbutton"
+    ID="" DESTWEB="About" DESTTOPIC="%HOMETOPIC%" LABEL="About"
+}%
+%INCLUDE{
+    "PatternSkinNavigation" section="topbarbutton"
+    ID="" DESTWEB="Blog" DESTTOPIC="%HOMETOPIC%" LABEL="Blog"
+}%
+%INCLUDE{
+    "PatternSkinNavigation" section="topbarbutton"
+    ID="" DESTWEB="Extensions" DESTTOPIC="%HOMETOPIC%" LABEL="Extensions"
+}%
+%INCLUDE{
+    "PatternSkinNavigation" section="topbarbutton"
+    ID="" DESTWEB="%SYSTEMWEB%" DESTTOPIC="%HOMETOPIC%" LABEL="Documentation"
+}%
+%INCLUDE{
+    "PatternSkinNavigation" section="topbarbutton"
+    ID="" DESTWEB="Community" DESTTOPIC="%HOMETOPIC%" LABEL="Community"
+}%
+%INCLUDE{
+    "PatternSkinNavigation" section="topbarbutton"
+    ID="" DESTWEB="Development" DESTTOPIC="%HOMETOPIC%" LABEL="Development"
+}%
+%INCLUDE{
+    "PatternSkinNavigation" section="topbarbutton"
+    ID="" DESTWEB="Tasks" DESTTOPIC="%HOMETOPIC%" LABEL="Tasks"
+}%
+%INCLUDE{
+    "PatternSkinNavigation" section="topbarbutton"
+    ID="" DESTWEB="Download" DESTTOPIC="%HOMETOPIC%" LABEL="Download"
+}%
+%INCLUDE{
+    "PatternSkinNavigation" section="topbarbutton"
+    ID="" DESTWEB="Support" DESTTOPIC="%HOMETOPIC%" LABEL="Support"
+}%
+</ul></div>%ENDSECTION{"main"}%
+
+
+%STARTSECTION{"meta"}%<div id="foswikisiteUserBar"><ul>%IF{
+    "context authenticated"
+    then='<li>%MAKETEXT{
+        "Hello [_1]"
+        args="[[%WIKIUSERNAME%][%SPACEOUT{%WIKINAME%}%]]"
+    }%</li>'
+}%%IF{
+    "$ LOGOUT != ''"
+    then='<li>%LOGOUT%</li>'
+}%%IF{
+    "$ LOGIN != '' and not context authenticated"
+    then='<li>Hello [[%WIKIUSERNAME%][%WIKINAME%]]</li>
+        <li>%LOGIN% %IF{
+            "context registration_supported AND context registration_enabled"
+            then="%MAKETEXT{"or"}% [[%SYSTEMWEB%.UserRegistration][%MAKETEXT{"Register"}%]]"
+        }%</li>'
+}%<li>[[%USERSWEB%.%WIKIUSERSTOPIC%][Users]]</li></ul></div>%ENDSECTION{"meta"}%
+</verbatim>
+<!-- %JQREQUIRE{"chili"}% -->

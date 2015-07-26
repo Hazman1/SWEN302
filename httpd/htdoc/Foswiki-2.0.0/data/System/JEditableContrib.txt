@@ -1,0 +1,45 @@
+%META:TOPICINFO{author="ProjectContributor" date="1434333981" format="1.1" version="1"}%
+---+!! !%TOPIC%
+<!--
+   * Set SHORTDESCRIPTION = The JQuery "JEditable" plugin, packaged for use in Foswiki
+-->
+%SHORTDESCRIPTION%
+
+%TOC%
+
+This add-on packages up the jQuery "JEditable" plugin from Miko Tuupala. This excellent
+little plugin gives you edit-in-place capability with many common form input types.
+
+See http://www.appelsiini.net/projects/jeditable for more information.
+
+---++ Installation Instructions
+
+You do not need to install anything in the browser to use this extension. The following instructions are for the administrator who installs the extension on the server.
+
+Open configure, and open the "Extensions" section. Use "Find More Extensions" to get a list of available extensions. Select "Install".
+
+If you have any problems, or if the extension isn't available in =configure=, then you can still install manually from the command-line. See http://foswiki.org/Support/ManuallyInstallingExtensions for more help.
+
+
+With JQueryPlugin versions *before* 4.02, you will have to enable the JEditableContribPlugin.
+
+---++ Info
+
+|  Change History: | <!-- versions below in reverse order -->&nbsp; |
+| 1.71 | Foswikitask:Item12864: Use simple decimal VERSION strings |
+| 1.7.1 | Initial release |
+|  Dependencies: | <table border="1" class="foswikiTable"><tr><th>Name</th><th>Version</th><th>Description</th></tr><tr><td align="left">Foswiki::Plugins::JQueryPlugin</td><td align="left">&gt;=6.00</td><td align="left">Required</td></tr></table> |
+
+<!-- Do _not_ attempt to edit this topic; it is auto-generated. -->
+
+%META:FORM{name="PackageForm"}%
+%META:FIELD{name="Author" title="Author" value="Crawford Currie http://c-dot.co.uk"}%
+%META:FIELD{name="Version" title="Version" value="1.71"}%
+%META:FIELD{name="Release" title="Release" value="1.7.1"}%
+%META:FIELD{name="Repository" title="Repository" value="https://github.com/foswiki/distro"}%
+%META:FIELD{name="Copyright" title="Copyright" value="&copy; 2011-2015 Foswiki Contributors"}%
+%META:FIELD{name="License" title="License" value="[[http://www.gnu.org/licenses/gpl.html][GPL (Gnu General Public License)]]"}%
+%META:FIELD{name="Home" title="Home" value="http://foswiki.org/Extensions/JEditableContrib"}%
+%META:FIELD{name="Support" title="Support" value="http://foswiki.org/Support/JEditableContrib"}%
+%META:FILEATTACHMENT{name="jquery.jeditable_src.js" attr="h" comment="" user="ProjectContributor" date="1434333981" size="24351" version="1"}%
+%META:FILEATTACHMENT{name="jquery.jeditable.js" attr="h" comment="" user="ProjectContributor" date="1434333981" size="7945" version="1"}%

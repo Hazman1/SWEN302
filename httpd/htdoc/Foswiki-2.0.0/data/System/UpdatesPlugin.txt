@@ -1,0 +1,90 @@
+%META:TOPICINFO{author="ProjectContributor" comment="" date="1427043013" format="1.1" version="1"}%
+---+!! %TOPIC%
+<img class="foswikiRight" src="%ATTACHURL%/logo.png">
+Checks Foswiki.org for updates
+
+%TOC%
+
+This plugin is used to keep [[%USERSWEB%.AdminGroup][administrators]] informed
+of updates to their installed extensions via a pop-up message at the top of the
+page.
+
+Users can choose to either perform the update immediately using the =configure=
+tool, or delay it until later.
+
+---++ Usage
+
+Click below button to force checking foswiki.org for
+extension updates. If your wiki requires updating, a message will be displayed
+at the top of the page.
+
+%BUTTON{"%MAKETEXT{"Search for updates"}%" id="forceCheck" icon="bricks"}%
+
+<literal>
+<script>
+jQuery(function($) {
+  $("#forceCheck").click(function() {
+    $.cookie("FOSWIKI_UPDATESPLUGIN", null, {expire: -1, path: "/"});
+    window.location.href = '%SCRIPTURL{"view"}%/%WEB%/%TOPIC%?t=%GMTIME{"$epoch"}%';
+    return false;
+  });
+});
+</script>
+</literal>
+%JQREQUIRE{"cookie"}%
+
+The upgrade decision is stored locally, so that the plugin will only check for
+updates again when this cookie expires (in 7 days).
+
+Note that the plugin requires Javascript and Cookies to be enabled in the
+browser.
+
+---++ Installation Instructions
+
+You do not need to install anything in the browser to use this extension. The following instructions are for the administrator who installs the extension on the server.
+
+Open configure, and open the "Extensions" section. Use "Find More Extensions" to get a list of available extensions. Select "Install".
+
+If you have any problems, or if the extension isn't available in =configure=, then you can still install manually from the command-line. See http://foswiki.org/Support/ManuallyInstallingExtensions for more help.
+
+
+---++ Notes
+The plugin sends update status requests to the repository server to retrieve
+the current release information for extensions. If these update status requests
+are proxied via the local server (the default) then the current status of
+extensions retrieved from the repository is cached in the
+working/work_areas/UpdatesPlugin directory for 24 hours (default) before being
+retrieved again. You can safely clear the cache at any time by deleting all
+files in this directory.
+
+The plugin defines a REST handler for handling proxy requests. The 'rest'
+script must be removed from the ={AuthScripts}= configuration for this to work.
+
+%T% If you are using private extensions on your wiki server that are not available
+as Open Source on foswiki.org then use the ={ExcludeExtensions}= parameter in =configure=
+to prevent disclosing them to the outside world.
+
+---++ Info
+<!--
+   * Set SHORTDESCRIPTION = Checks Foswiki.org for updates
+-->
+This plugin was initially developed during a collaborative design and coding session at the 2011 Foswiki Camp.
+
+|  Change History: | <!-- versions below in reverse order -->&nbsp; |
+|  Dependencies: | <table border="1" class="foswikiTable"><tr><th>Name</th><th>Version</th><th>Description</th></tr><tr><td align="left">JSON</td><td align="left">&gt;=0</td><td align="left">Required. Available from the CPAN archive.</td></tr></table> |
+
+
+%META:FORM{name="PackageForm"}%
+%META:FIELD{name="Author" title="Author" value="Foswiki:Main.MichaelDaum, Foswiki:Main.CrawfordCurrie"}%
+%META:FIELD{name="Version" title="Version" value="1.00"}%
+%META:FIELD{name="Release" title="Release" value="1.00"}%
+%META:FIELD{name="Repository" title="Repository" value="https://github.com/foswiki/distro"}%
+%META:FIELD{name="Copyright" title="Copyright" value="&copy; Foswiki Contributors 2011-2014"}%
+%META:FIELD{name="License" title="License" value="[[http://www.gnu.org/licenses/gpl.html][GPL (Gnu General Public License)]]"}%
+%META:FIELD{name="Home" title="Home" value="http://foswiki.org/Extensions/UpdatesPlugin"}%
+%META:FIELD{name="Support" title="Support" value="Foswiki:Support/UpdatesPlugin"}%
+%META:FILEATTACHMENT{name="Makefile" attr="h" comment="" user="ProjectContributor" date="1427043013" size="127" version="1"}%
+%META:FILEATTACHMENT{name="jquery.updates.uncompressed.js" attr="h" comment="" user="ProjectContributor" date="1427043013" size="4313" version="1"}%
+%META:FILEATTACHMENT{name="logo.png" attr="h" autoattached="1" comment="" date="1427043013" size="53676" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="jquery.updates.js" attr="h" comment="" user="ProjectContributor" date="1427043013" size="2322" version="1"}%
+%META:FILEATTACHMENT{name="jquery.updates.js.gz" attr="h" comment="" user="ProjectContributor" date="1427043013" size="786" version="1"}%
