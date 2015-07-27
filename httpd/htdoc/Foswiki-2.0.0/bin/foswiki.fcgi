@@ -1,4 +1,4 @@
-#!/usr/bin/env perl
+#! /usr/pkg/bin/perl
 # Foswiki - The Free and Open Source Wiki, http://foswiki.org/
 #
 # Copyright (C) 2008-2015 Gilmar Santos Jr, jgasjr@gmail.com and Foswiki

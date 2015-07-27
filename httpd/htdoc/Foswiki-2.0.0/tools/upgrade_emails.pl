@@ -1,4 +1,4 @@
-#! /usr/bin/env perl
+#! /usr/pkg/bin/perl
 #
 # This script will iterate over the list of users in the Wiki users
 # topic, recovering the email for each user (which will get the email

@@ -1,4 +1,4 @@
-#! /usr/bin/env perl
+#! /usr/pkg/bin/perl
 BEGIN {
   unshift @INC, $ENV{FOSWIKICPAN} if defined $ENV{FOSWIKICPAN};
 }

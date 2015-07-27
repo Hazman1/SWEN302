@@ -1,4 +1,4 @@
-#! /usr/bin/env perl
+#! /usr/pkg/bin/perl
 # See bottom of file for license and copyright information
 #
 # Simple utility to fetch an HTML page from a server

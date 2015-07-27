@@ -6,7 +6,7 @@ APACHE_DIR=~ # points to where the httpd directory is
 APACHE_GROUP=students
 USER=kingharr
 export APACHE_DIR APACHE_GROUP
-CONF_FILE=$APACHE_DIR/httpd/conf/httpd.conf
+CONF_FILE=/local/scratch/mondays/SWEN302/httpd/conf/httpd.conf
 DESC="Apache Http Server"
 
 

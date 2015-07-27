@@ -1,4 +1,4 @@
-#!/usr/bin/env perl
+#! /usr/pkg/bin/perl
 
 # mod_perl Runtime Engine of Foswiki - The Free and Open Source Wiki,
 # http://foswiki.org/

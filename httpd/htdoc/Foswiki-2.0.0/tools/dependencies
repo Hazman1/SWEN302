@@ -1,4 +1,4 @@
-#! /usr/bin/env perl
+#! /usr/pkg/bin/perl
 # Shell access to the PERLDEPENDENCYREPORT macro.
 # See bottom of file for POD documentation.
 #

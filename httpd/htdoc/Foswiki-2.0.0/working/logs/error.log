@@ -193,3 +193,133 @@ Compilation failed in require at /local/scratch/mondays/httpd/htdoc/Foswiki-2.0.
 	Foswiki::UI::handleRequest(Foswiki::Request=HASH(0x2aed650)) called at /local/scratch/mondays/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/Engine/CLI.pm line 60
 	Foswiki::Engine::CLI::run(Foswiki::Engine::CLI=HASH(0x26f6e50)) called at /local/scratch/mondays/httpd/htdoc/Foswiki-2.0.0/bin/view line 29.
  |
+| 2015-07-27T11:37:08+12:00 warning | Can't locate Crypt/PasswdMD5.pm in @INC (you may need to install the Crypt::PasswdMD5 module) (@INC contains: /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib . /usr/local/lib/perl5/site_perl/5.22.0/x86_64-linux-thread-multi /usr/local/lib/perl5/site_perl/5.22.0 /usr/pkg/lib/perl5/vendor_perl/5.22.0/x86_64-linux-thread-multi /usr/pkg/lib/perl5/vendor_perl/5.22.0 /usr/pkg/lib/perl5/5.22.0/x86_64-linux-thread-multi /usr/pkg/lib/perl5/5.22.0 /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/CPAN/lib) at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/Users/BaseUserMapping.pm line 40.
+ at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/Users/BaseUserMapping.pm line 40.
+	Foswiki::Users::BaseUserMapping::BEGIN() called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/Users/BaseUserMapping.pm line 40
+	eval {...} called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/Users/BaseUserMapping.pm line 40
+	require Foswiki/Users/BaseUserMapping.pm called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/Store/PlainFile.pm line 63
+	Foswiki::Store::PlainFile::BEGIN() called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/Users/BaseUserMapping.pm line 40
+	eval {...} called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/Users/BaseUserMapping.pm line 40
+	require Foswiki/Store/PlainFile.pm called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki.pm line 1746
+	Foswiki::load_package("Foswiki::Store::PlainFile") called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki.pm line 2105
+	Foswiki::new("Foswiki", "AdminUser", Foswiki::Request=HASH(0x2ad3880), HASH(0x2abe8f0)) called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/UI.pm line 365
+	Foswiki::UI::__ANON__() called at /usr/pkg/lib/perl5/vendor_perl/5.22.0/Error.pm line 421
+	eval {...} called at /usr/pkg/lib/perl5/vendor_perl/5.22.0/Error.pm line 413
+	Error::subs::try(CODE(0x1645258), HASH(0x2b8b620)) called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/UI.pm line 500
+	Foswiki::UI::_execute(Foswiki::Request=HASH(0x2ad3880), CODE(0x1ed48d0), "command_line", 1, "view", 1) called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/UI.pm line 326
+	Foswiki::UI::handleRequest(Foswiki::Request=HASH(0x2ad3880)) called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/Engine/CLI.pm line 60
+	Foswiki::Engine::CLI::run(Foswiki::Engine::CLI=HASH(0x26d8a60)) called at view line 29
+BEGIN failed--compilation aborted at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/Users/BaseUserMapping.pm line 40.
+ at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/Users/BaseUserMapping.pm line 40.
+	require Foswiki/Users/BaseUserMapping.pm called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/Store/PlainFile.pm line 63
+	Foswiki::Store::PlainFile::BEGIN() called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/Users/BaseUserMapping.pm line 40
+	eval {...} called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/Users/BaseUserMapping.pm line 40
+	require Foswiki/Store/PlainFile.pm called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki.pm line 1746
+	Foswiki::load_package("Foswiki::Store::PlainFile") called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki.pm line 2105
+	Foswiki::new("Foswiki", "AdminUser", Foswiki::Request=HASH(0x2ad3880), HASH(0x2abe8f0)) called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/UI.pm line 365
+	Foswiki::UI::__ANON__() called at /usr/pkg/lib/perl5/vendor_perl/5.22.0/Error.pm line 421
+	eval {...} called at /usr/pkg/lib/perl5/vendor_perl/5.22.0/Error.pm line 413
+	Error::subs::try(CODE(0x1645258), HASH(0x2b8b620)) called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/UI.pm line 500
+	Foswiki::UI::_execute(Foswiki::Request=HASH(0x2ad3880), CODE(0x1ed48d0), "command_line", 1, "view", 1) called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/UI.pm line 326
+	Foswiki::UI::handleRequest(Foswiki::Request=HASH(0x2ad3880)) called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/Engine/CLI.pm line 60
+	Foswiki::Engine::CLI::run(Foswiki::Engine::CLI=HASH(0x26d8a60)) called at view line 29
+Compilation failed in require at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/Store/PlainFile.pm line 63.
+ at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/Store/PlainFile.pm line 63.
+	Foswiki::Store::PlainFile::BEGIN() called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/Store/PlainFile.pm line 63
+	eval {...} called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/Store/PlainFile.pm line 63
+	require Foswiki/Store/PlainFile.pm called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki.pm line 1746
+	Foswiki::load_package("Foswiki::Store::PlainFile") called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki.pm line 2105
+	Foswiki::new("Foswiki", "AdminUser", Foswiki::Request=HASH(0x2ad3880), HASH(0x2abe8f0)) called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/UI.pm line 365
+	Foswiki::UI::__ANON__() called at /usr/pkg/lib/perl5/vendor_perl/5.22.0/Error.pm line 421
+	eval {...} called at /usr/pkg/lib/perl5/vendor_perl/5.22.0/Error.pm line 413
+	Error::subs::try(CODE(0x1645258), HASH(0x2b8b620)) called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/UI.pm line 500
+	Foswiki::UI::_execute(Foswiki::Request=HASH(0x2ad3880), CODE(0x1ed48d0), "command_line", 1, "view", 1) called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/UI.pm line 326
+	Foswiki::UI::handleRequest(Foswiki::Request=HASH(0x2ad3880)) called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/Engine/CLI.pm line 60
+	Foswiki::Engine::CLI::run(Foswiki::Engine::CLI=HASH(0x26d8a60)) called at view line 29
+BEGIN failed--compilation aborted at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/Store/PlainFile.pm line 63.
+ at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/Store/PlainFile.pm line 63.
+	require Foswiki/Store/PlainFile.pm called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki.pm line 1746
+	Foswiki::load_package("Foswiki::Store::PlainFile") called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki.pm line 2105
+	Foswiki::new("Foswiki", "AdminUser", Foswiki::Request=HASH(0x2ad3880), HASH(0x2abe8f0)) called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/UI.pm line 365
+	Foswiki::UI::__ANON__() called at /usr/pkg/lib/perl5/vendor_perl/5.22.0/Error.pm line 421
+	eval {...} called at /usr/pkg/lib/perl5/vendor_perl/5.22.0/Error.pm line 413
+	Error::subs::try(CODE(0x1645258), HASH(0x2b8b620)) called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/UI.pm line 500
+	Foswiki::UI::_execute(Foswiki::Request=HASH(0x2ad3880), CODE(0x1ed48d0), "command_line", 1, "view", 1) called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/UI.pm line 326
+	Foswiki::UI::handleRequest(Foswiki::Request=HASH(0x2ad3880)) called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/Engine/CLI.pm line 60
+	Foswiki::Engine::CLI::run(Foswiki::Engine::CLI=HASH(0x26d8a60)) called at view line 29
+Compilation failed in require at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki.pm line 1746.
+ at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki.pm line 1746.
+	Foswiki::load_package("Foswiki::Store::PlainFile") called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki.pm line 2105
+	Foswiki::new("Foswiki", "AdminUser", Foswiki::Request=HASH(0x2ad3880), HASH(0x2abe8f0)) called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/UI.pm line 365
+	Foswiki::UI::__ANON__() called at /usr/pkg/lib/perl5/vendor_perl/5.22.0/Error.pm line 421
+	eval {...} called at /usr/pkg/lib/perl5/vendor_perl/5.22.0/Error.pm line 413
+	Error::subs::try(CODE(0x1645258), HASH(0x2b8b620)) called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/UI.pm line 500
+	Foswiki::UI::_execute(Foswiki::Request=HASH(0x2ad3880), CODE(0x1ed48d0), "command_line", 1, "view", 1) called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/UI.pm line 326
+	Foswiki::UI::handleRequest(Foswiki::Request=HASH(0x2ad3880)) called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/Engine/CLI.pm line 60
+	Foswiki::Engine::CLI::run(Foswiki::Engine::CLI=HASH(0x26d8a60)) called at view line 29.
+ |
+| 2015-07-27T11:52:41+12:00 warning | Can't locate Crypt/PasswdMD5.pm in @INC (you may need to install the Crypt::PasswdMD5 module) (@INC contains: /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib . /usr/local/lib/perl5/site_perl/5.22.0/x86_64-linux-thread-multi /usr/local/lib/perl5/site_perl/5.22.0 /usr/pkg/lib/perl5/vendor_perl/5.22.0/x86_64-linux-thread-multi /usr/pkg/lib/perl5/vendor_perl/5.22.0 /usr/pkg/lib/perl5/5.22.0/x86_64-linux-thread-multi /usr/pkg/lib/perl5/5.22.0 /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/CPAN/lib) at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/Users/BaseUserMapping.pm line 40.
+ at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/Users/BaseUserMapping.pm line 40.
+	Foswiki::Users::BaseUserMapping::BEGIN() called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/Users/BaseUserMapping.pm line 40
+	eval {...} called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/Users/BaseUserMapping.pm line 40
+	require Foswiki/Users/BaseUserMapping.pm called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/Store/PlainFile.pm line 63
+	Foswiki::Store::PlainFile::BEGIN() called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/Users/BaseUserMapping.pm line 40
+	eval {...} called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/Users/BaseUserMapping.pm line 40
+	require Foswiki/Store/PlainFile.pm called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki.pm line 1746
+	Foswiki::load_package("Foswiki::Store::PlainFile") called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki.pm line 2105
+	Foswiki::new("Foswiki", "AdminUser", Foswiki::Request=HASH(0x2673770), HASH(0x265e800)) called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/UI.pm line 365
+	Foswiki::UI::__ANON__() called at /usr/pkg/lib/perl5/vendor_perl/5.22.0/Error.pm line 421
+	eval {...} called at /usr/pkg/lib/perl5/vendor_perl/5.22.0/Error.pm line 413
+	Error::subs::try(CODE(0x11e5258), HASH(0x272b630)) called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/UI.pm line 500
+	Foswiki::UI::_execute(Foswiki::Request=HASH(0x2673770), CODE(0x1af1538), "view", 1, "command_line", 1) called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/UI.pm line 326
+	Foswiki::UI::handleRequest(Foswiki::Request=HASH(0x2673770)) called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/Engine/CLI.pm line 60
+	Foswiki::Engine::CLI::run(Foswiki::Engine::CLI=HASH(0x22763b0)) called at view line 29
+BEGIN failed--compilation aborted at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/Users/BaseUserMapping.pm line 40.
+ at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/Users/BaseUserMapping.pm line 40.
+	require Foswiki/Users/BaseUserMapping.pm called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/Store/PlainFile.pm line 63
+	Foswiki::Store::PlainFile::BEGIN() called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/Users/BaseUserMapping.pm line 40
+	eval {...} called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/Users/BaseUserMapping.pm line 40
+	require Foswiki/Store/PlainFile.pm called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki.pm line 1746
+	Foswiki::load_package("Foswiki::Store::PlainFile") called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki.pm line 2105
+	Foswiki::new("Foswiki", "AdminUser", Foswiki::Request=HASH(0x2673770), HASH(0x265e800)) called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/UI.pm line 365
+	Foswiki::UI::__ANON__() called at /usr/pkg/lib/perl5/vendor_perl/5.22.0/Error.pm line 421
+	eval {...} called at /usr/pkg/lib/perl5/vendor_perl/5.22.0/Error.pm line 413
+	Error::subs::try(CODE(0x11e5258), HASH(0x272b630)) called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/UI.pm line 500
+	Foswiki::UI::_execute(Foswiki::Request=HASH(0x2673770), CODE(0x1af1538), "view", 1, "command_line", 1) called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/UI.pm line 326
+	Foswiki::UI::handleRequest(Foswiki::Request=HASH(0x2673770)) called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/Engine/CLI.pm line 60
+	Foswiki::Engine::CLI::run(Foswiki::Engine::CLI=HASH(0x22763b0)) called at view line 29
+Compilation failed in require at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/Store/PlainFile.pm line 63.
+ at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/Store/PlainFile.pm line 63.
+	Foswiki::Store::PlainFile::BEGIN() called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/Store/PlainFile.pm line 63
+	eval {...} called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/Store/PlainFile.pm line 63
+	require Foswiki/Store/PlainFile.pm called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki.pm line 1746
+	Foswiki::load_package("Foswiki::Store::PlainFile") called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki.pm line 2105
+	Foswiki::new("Foswiki", "AdminUser", Foswiki::Request=HASH(0x2673770), HASH(0x265e800)) called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/UI.pm line 365
+	Foswiki::UI::__ANON__() called at /usr/pkg/lib/perl5/vendor_perl/5.22.0/Error.pm line 421
+	eval {...} called at /usr/pkg/lib/perl5/vendor_perl/5.22.0/Error.pm line 413
+	Error::subs::try(CODE(0x11e5258), HASH(0x272b630)) called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/UI.pm line 500
+	Foswiki::UI::_execute(Foswiki::Request=HASH(0x2673770), CODE(0x1af1538), "view", 1, "command_line", 1) called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/UI.pm line 326
+	Foswiki::UI::handleRequest(Foswiki::Request=HASH(0x2673770)) called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/Engine/CLI.pm line 60
+	Foswiki::Engine::CLI::run(Foswiki::Engine::CLI=HASH(0x22763b0)) called at view line 29
+BEGIN failed--compilation aborted at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/Store/PlainFile.pm line 63.
+ at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/Store/PlainFile.pm line 63.
+	require Foswiki/Store/PlainFile.pm called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki.pm line 1746
+	Foswiki::load_package("Foswiki::Store::PlainFile") called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki.pm line 2105
+	Foswiki::new("Foswiki", "AdminUser", Foswiki::Request=HASH(0x2673770), HASH(0x265e800)) called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/UI.pm line 365
+	Foswiki::UI::__ANON__() called at /usr/pkg/lib/perl5/vendor_perl/5.22.0/Error.pm line 421
+	eval {...} called at /usr/pkg/lib/perl5/vendor_perl/5.22.0/Error.pm line 413
+	Error::subs::try(CODE(0x11e5258), HASH(0x272b630)) called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/UI.pm line 500
+	Foswiki::UI::_execute(Foswiki::Request=HASH(0x2673770), CODE(0x1af1538), "view", 1, "command_line", 1) called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/UI.pm line 326
+	Foswiki::UI::handleRequest(Foswiki::Request=HASH(0x2673770)) called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/Engine/CLI.pm line 60
+	Foswiki::Engine::CLI::run(Foswiki::Engine::CLI=HASH(0x22763b0)) called at view line 29
+Compilation failed in require at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki.pm line 1746.
+ at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki.pm line 1746.
+	Foswiki::load_package("Foswiki::Store::PlainFile") called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki.pm line 2105
+	Foswiki::new("Foswiki", "AdminUser", Foswiki::Request=HASH(0x2673770), HASH(0x265e800)) called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/UI.pm line 365
+	Foswiki::UI::__ANON__() called at /usr/pkg/lib/perl5/vendor_perl/5.22.0/Error.pm line 421
+	eval {...} called at /usr/pkg/lib/perl5/vendor_perl/5.22.0/Error.pm line 413
+	Error::subs::try(CODE(0x11e5258), HASH(0x272b630)) called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/UI.pm line 500
+	Foswiki::UI::_execute(Foswiki::Request=HASH(0x2673770), CODE(0x1af1538), "view", 1, "command_line", 1) called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/UI.pm line 326
+	Foswiki::UI::handleRequest(Foswiki::Request=HASH(0x2673770)) called at /local/scratch/mondays/SWEN302/httpd/htdoc/Foswiki-2.0.0/lib/Foswiki/Engine/CLI.pm line 60
+	Foswiki::Engine::CLI::run(Foswiki::Engine::CLI=HASH(0x22763b0)) called at view line 29.
+ |
